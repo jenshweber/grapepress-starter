@@ -10,7 +10,7 @@ services:
       - 62222:62222
     working_dir: /usr/src/app
     volumes:
-      - ~/grapevine:/usr/src/app/book
+      - ./book:/usr/src/app/book
   neo4j:
     image: arm64v8/neo4j
     container_name: neo4j
